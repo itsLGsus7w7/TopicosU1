@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewPriceWithIVA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio con IVA:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPriceWithIVA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPriceWithIVA"
+        app:layout_constraintTop_toTopOf="@+id/textViewPriceWithIVA"
+        android:hint="Precio con IVA"/>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPriceWithIVA" />
+
+    <TextView
+        android:id="@+id/textViewPriceWithoutIVA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio sin IVA:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/textViewIVA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IVA:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPriceWithoutIVA"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIVA" />
+
+    <TextView
+        android:id="@+id/textViewResultPriceWithoutIVA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPriceWithoutIVA"
+        app:layout_constraintTop_toTopOf="@+id/textViewPriceWithoutIVA" />
+
+    <TextView
+        android:id="@+id/textViewResultIVA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewIVA"
+        app:layout_constraintTop_toTopOf="@+id/textViewIVA" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
