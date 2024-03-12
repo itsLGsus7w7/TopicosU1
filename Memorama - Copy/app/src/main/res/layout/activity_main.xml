@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/botonReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginBottom="260dp"
+        android:onClick="Reiniciar"
+        android:text="Reiniciar Juego"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/CardA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="196dp"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/CardC1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="C"
+        app:layout_constraintStart_toEndOf="@+id/CardA2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/CardA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="A"
+        app:layout_constraintStart_toEndOf="@+id/CardB1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/CardE2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="E"
+        app:layout_constraintStart_toEndOf="@+id/CardH1"
+        app:layout_constraintTop_toBottomOf="@+id/CardB2" />
+
+    <ToggleButton
+        android:id="@+id/CardB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="B"
+        app:layout_constraintStart_toEndOf="@+id/CardA1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/CardG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="G"
+        app:layout_constraintStart_toEndOf="@+id/CardE1"
+        app:layout_constraintTop_toBottomOf="@+id/CardA2" />
+
+    <ToggleButton
+        android:id="@+id/CardH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="H"
+        app:layout_constraintStart_toEndOf="@+id/CardC2"
+        app:layout_constraintTop_toBottomOf="@+id/CardF1" />
+
+    <ToggleButton
+        android:id="@+id/CardD1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardA1" />
+
+    <ToggleButton
+        android:id="@+id/CardF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="F"
+        app:layout_constraintStart_toEndOf="@+id/CardE2"
+        app:layout_constraintTop_toBottomOf="@+id/CardG2" />
+
+    <ToggleButton
+        android:id="@+id/CardH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="H"
+        app:layout_constraintStart_toEndOf="@+id/CardG1"
+        app:layout_constraintTop_toBottomOf="@+id/CardC1" />
+
+    <ToggleButton
+        android:id="@+id/CardG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="G"
+        app:layout_constraintStart_toEndOf="@+id/CardB2"
+        app:layout_constraintTop_toBottomOf="@+id/CardH2" />
+
+    <ToggleButton
+        android:id="@+id/CardE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="E"
+        app:layout_constraintStart_toEndOf="@+id/CardD1"
+        app:layout_constraintTop_toBottomOf="@+id/CardB1" />
+
+    <ToggleButton
+        android:id="@+id/CardC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardD2" />
+
+    <ToggleButton
+        android:id="@+id/CardB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="B"
+        app:layout_constraintStart_toEndOf="@+id/CardF1"
+        app:layout_constraintTop_toBottomOf="@+id/CardG1" />
+
+    <ToggleButton
+        android:id="@+id/CardD2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardD1" />
+
+    <ToggleButton
+        android:id="@+id/CardF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textOff="&quot;?&quot;"
+        android:textOn="F"
+        app:layout_constraintStart_toEndOf="@+id/CardD2"
+        app:layout_constraintTop_toBottomOf="@+id/CardE1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
